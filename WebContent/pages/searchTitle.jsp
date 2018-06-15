@@ -35,9 +35,8 @@
 		</div>
 		<div class="row">
 			<a href="search/title" class="btn btn-info" role="button">Search
-				title</a> 
-				<a name="search" href="search" class="btn btn-info"
-				role="button">All books</a>
+				title</a><p> </p><a href="search" name="search" href="search"
+				class="btn btn-info" role="button">All books</a>
 		</div>
 	</div>
 	<div class="container">
@@ -65,9 +64,10 @@
 	<div class="container">
 		<ul class="pagination">
 			<li class="page-item"><a class="page-link"
-				href="search?page=${currentPage - 1}">Previous</a></li>
-			<li class="page-item"><a class="page-link" href="search">1</a></li>
-			<li class="page-item"><a class="page-link" href="search?page=2">2</a></li>
+				href="search/title?page=${currentPage - 1}">Previous</a></li>
+			<li class="page-item"><a class="page-link" href="search/title">1</a></li>
+			<li class="page-item"><a class="page-link"
+				href="search/title?page=2">2</a></li>
 			<c:if test="${noOfPages > 3}">
 				<li class="page-item"><a class="page-link" href="">...</a></li>
 			</c:if>
@@ -79,10 +79,10 @@
 			</c:if>
 			<c:if test="${noOfPages > 2}">
 				<li class="page-item"><a class="page-link"
-					href="search?page=${noOfPages}">${noOfPages}</a></li>
+					href="search/title?page=${noOfPages}">${noOfPages}</a></li>
 			</c:if>
 			<li class="page-item"><a class="page-link"
-				href="search?page=${currentPage + 1}">Next</a></li>
+				href="search/title?page=${currentPage + 1}">Next</a></li>
 		</ul>
 	</div>
 </body>
